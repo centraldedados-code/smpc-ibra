@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#092040">
+<title>SMPC | Sistema de Monitoramento e Prestação de Contas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=20260820-2">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand-block">
+      <img class="brand-logo" src="assets/logo-instituto-br-arte.png" alt="Instituto BR Arte">
+      <div class="brand-copy">
+        <div class="brand-name">SMPC</div>
+        <div class="brand-sub">Instituto BR Arte</div>
+      </div>
+      <button class="icon-button sidebar-close" id="sidebarClose" type="button" aria-label="Fechar menu">×</button>
+    </div>
+
+    <div class="sidebar-caption">Sistema de Monitoramento<br>e Prestação de Contas</div>
+    <nav class="side-nav" id="nav" aria-label="Navegação principal"></nav>
+
+    <div class="sidebar-foot">
+      <div class="security-dot"></div>
+      <div>
+        <strong>Ambiente institucional</strong>
+        <span>Base pública sanitizada</span>
+      </div>
+    </div>
+  </aside>
+
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+  <main class="main-shell">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="icon-button menu-button" id="menuButton" type="button" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div>
+          <div class="eyebrow" id="pageEyebrow">SMPC</div>
+          <h1 class="page-title" id="pageTitle">Visão Geral</h1>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <div class="data-state" title="A aplicação não inventa uma data de atualização quando a fonte não a fornece.">
+          <span class="data-state-dot"></span>
+          <span>Dados rastreáveis</span>
+        </div>
+        <button class="audit-button" id="auditButton" type="button">
+          <span class="audit-icon" aria-hidden="true">◉</span>
+          <span>Modo Auditor</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="content-wrap">
+      <div id="conteudo" aria-live="polite"></div>
+      <footer class="footer">
+        <span>Instituto BR Arte</span>
+        <span>SMPC — Sistema de Monitoramento e Prestação de Contas</span>
+      </footer>
+    </div>
+  </main>
+</div>
+
+<script type="module" src="js/app.js?v=20260820-2"></script>
+</body>
+</html>
